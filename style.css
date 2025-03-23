@@ -1,4 +1,4 @@
-/* Baggrund */
+/* GENERELT */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -10,14 +10,14 @@ body {
   color: white;
 }
 
-/* Gennemsigtig overlay så tekst og billede står tydeligt */
+/* Overlay-effekt */
 .overlay {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
   min-height: 100vh;
+  padding: 20px;
 }
 
-/* Logo styling */
+/* LOGO */
 .logo {
   display: block;
   margin: 0 auto;
@@ -26,24 +26,34 @@ body {
   margin-bottom: 10px;
 }
 
-/* Menu-knap */
+/* MENU-KNAP */
 .menu-toggle {
-  font-size: 24px;
   text-align: center;
+  font-size: 22px;
   cursor: pointer;
   margin-top: 10px;
+  color: white;
 }
 
-/* Mobil-menu */
+/* MOBILMENU */
 .mobile-menu {
   display: none;
   text-align: center;
-  margin-top: 10px;
+  margin-top: 15px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
 }
 
+.mobile-menu.show {
+  display: block;
+  opacity: 1;
+}
+
+/* MENU LINKS */
 .mobile-menu ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .mobile-menu li {
@@ -51,21 +61,25 @@ body {
 }
 
 .mobile-menu a {
-  text-decoration: none;
   color: white;
+  text-decoration: none;
   font-size: 18px;
 }
 
-/* Profilbillede */
+.mobile-menu a:hover {
+  text-decoration: underline;
+}
+
+/* PROFILBILLEDE */
 .profile-image {
   display: block;
   margin: 20px auto;
   width: 300px;
   max-width: 90%;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
-/* Intro tekst */
+/* VELKOMSTTEKST */
 .intro-text {
   text-align: center;
   font-size: 16px;
