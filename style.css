@@ -1,91 +1,75 @@
-/* GENERELT */
-body {
+body, html {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-image: url('tattoo-background.png');
+  padding: 0;
+  font-family: sans-serif;
+  background: black;
+  color: white;
+  overflow-x: hidden;
+}
+
+.overlay {
+  background-image: url("tattoo-background.png");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  color: white;
-}
-
-/* Overlay-effekt */
-.overlay {
-  background-color: rgba(0, 0, 0, 0.6);
   min-height: 100vh;
-  padding: 20px;
+  text-align: center;
+  padding-bottom: 50px;
 }
 
-/* LOGO */
+/* Logo */
 .logo {
   display: block;
-  margin: 0 auto;
-  width: clamp(250px, 35vw, 500px); /* Øg bredden lidt */
-  max-width: 100%;
-  margin-top: 30px;
-  margin-bottom: 10px;
+  margin: 30px auto 10px auto;
+  width: clamp(280px, 40vw, 500px); /* større */
 }
 
 /* Menu-knap */
 .menu-toggle {
-  font-size: 18px;      /* Lidt mindre skrift end før */
+  display: block;
+  font-size: 18px;
   font-weight: bold;
   color: white;
   background: none;
   border: none;
   cursor: pointer;
-  margin-top: 5px;
+  margin: 10px auto;
 }
 
-/* MOBILMENU */
-.mobile-menu {
-  display: none;
-  text-align: center;
-  margin-top: 15px;
-  opacity: 0;
-  transition: opacity 0.4s ease;
-}
-
-.mobile-menu.show {
-  display: block;
-  opacity: 1;
-}
-
-/* MENU LINKS */
-.mobile-menu ul {
+/* Menu */
+.menu ul {
   list-style: none;
   padding: 0;
-  margin: 0;
-}
-
-.mobile-menu li {
   margin: 10px 0;
 }
 
-.mobile-menu a {
+.menu ul li {
+  margin: 10px 0;
+}
+
+.menu ul li a {
   color: white;
   text-decoration: none;
+  font-weight: bold;
   font-size: 18px;
 }
 
-.mobile-menu a:hover {
-  text-decoration: underline;
+/* Skjult menu */
+.hidden {
+  display: none;
 }
 
-/* PROFILBILLEDE */
-.profile-image {
+/* Profilbillede */
+.profile-img {
   display: block;
   margin: 20px auto;
-  width: 300px;
   max-width: 90%;
+  width: 350px;
   border-radius: 10px;
 }
 
-/* VELKOMSTTEKST */
+/* Introduktionstekst */
 .intro-text {
-  text-align: center;
+  margin-top: 20px;
   font-size: 16px;
-  margin-top: 15px;
-  padding: 0 10px;
+  padding: 0 20px;
 }
