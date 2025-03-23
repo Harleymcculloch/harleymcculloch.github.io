@@ -1,30 +1,24 @@
 body, html {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  background: url("tattoo-background.png") no-repeat center center fixed;
-  background-size: cover;
-  color: white;
+  font-family: Arial, sans-serif;
+  height: 100%;
   overflow-x: hidden;
+  background-color: black;
 }
 
 .overlay {
-  background-color: rgba(0, 0, 0, 0.6);
+  background: url('tattoo-background.png') no-repeat center center fixed;
+  background-size: cover;
   min-height: 100vh;
+  padding: 20px;
   text-align: center;
-  padding-top: 20px;
-}
-
-header {
-  position: relative;
-  text-align: center;
-  margin-bottom: 20px;
+  color: white;
 }
 
 .logo {
-  width: 200px;
-  max-width: 90%;
-  margin: 0 auto;
+  width: 160px;
+  margin: 20px auto 10px;
   display: block;
 }
 
@@ -33,44 +27,70 @@ header {
   border: none;
   color: white;
   font-size: 24px;
-  margin-top: 10px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   cursor: pointer;
+  position: relative;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin-top: 10px;
-  animation: fadeIn 0.5s ease-in-out;
+.menu-icon,
+.close-icon {
+  transition: opacity 0.3s ease;
 }
 
-nav ul li {
-  margin: 10px 0;
+.close-icon {
+  position: absolute;
+  top: 0;
+  opacity: 0;
 }
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 22px;
-  font-weight: bold;
-}
-
-nav.hidden {
+.menu.open + .menu-icon {
   display: none;
 }
 
-.profile img {
-  max-width: 90%;
-  height: auto;
-  border-radius: 10px;
-  margin-bottom: 15px;
-  margin-top: 20px;
+.menu.open + .close-icon {
+  display: block;
 }
 
-.profile p {
-  font-size: 16px;
-  max-width: 90%;
-  margin: 0 auto;
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+  animation: fadeIn 0.3s ease-in-out forwards;
+}
+
+.menu.open ul {
+  display: flex;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.profile-pic {
+  width: 80%;
+  max-width: 350px;
+  margin: 30px auto;
+  display: block;
+  border-radius: 10px;
+}
+
+.intro {
+  font-size: 18px;
+  margin-top: 20px;
+  padding-bottom: 60px;
+}
+
+.hidden {
+  opacity: 0;
 }
 
 @keyframes fadeIn {
