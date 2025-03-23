@@ -2,16 +2,16 @@
 <html lang="da">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Harley McCulloch</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="overlay">
     <header>
-      <img src="harley-logo.png" alt="Harley McCulloch Logo" class="logo">
-      <button class="menu-toggle" onclick="toggleMenu()">☰ Menu</button>
-      <nav id="menu" class="menu hidden">
+      <img src="harley-logo.png" alt="Harley McCulloch" class="logo" />
+      <div class="menu-toggle" onclick="toggleMenu()">&#9776; Menu</div>
+      <nav id="menu" class="menu">
         <ul>
           <li><a href="#">Forside</a></li>
           <li><a href="#">Galleri</a></li>
@@ -21,7 +21,7 @@
     </header>
 
     <main>
-      <img src="harley-profile.jpg" alt="Harley McCulloch" class="profile-img">
+      <img src="harley-profile.jpg" alt="Harley McCulloch" class="profile-img" />
       <p class="intro-text">
         Velkommen til Harley McCulloch's univers — billedkunst, events og personlighed.
       </p>
@@ -30,8 +30,8 @@
 
   <script>
     function toggleMenu() {
-      const menu = document.getElementById("menu");
-      menu.classList.toggle("hidden");
+      const menu = document.getElementById('menu');
+      menu.classList.toggle('show');
     }
   </script>
 </body>
