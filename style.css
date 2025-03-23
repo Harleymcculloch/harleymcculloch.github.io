@@ -3,8 +3,12 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f9f9f9; /* Lys baggrund */
-  color: black; /* Sort tekst */
+  background-image: url('tattoo-background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  color: white;
 }
 
 nav {
