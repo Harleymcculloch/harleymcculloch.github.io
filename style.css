@@ -21,7 +21,9 @@ body {
 .logo {
   display: block;
   margin: 0 auto;
-  width: clamp(200px, 25vw, 350px);
+  width: clamp(200px, 30vw, 400px); /* Gør logoet responsivt og større */
+  max-width: 100%;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 
