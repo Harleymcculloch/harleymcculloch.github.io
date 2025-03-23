@@ -2,16 +2,19 @@
 <html lang="da">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Harley McCulloch</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="overlay">
     <header>
-    <img src="harley-logo.png" alt="Harley McCulloch Logo" class="logo" />
-      <nav>
-        <ul class="menu">
+      <img src="harley-logo.png" alt="Harley McCulloch" class="logo" />
+
+      <div class="menu-toggle" onclick="toggleMenu()">☰ Menu</div>
+
+      <nav class="mobile-menu" id="mobileMenu">
+        <ul>
           <li><a href="#">Forside</a></li>
           <li><a href="#">Galleri</a></li>
           <li><a href="#">Kontakt</a></li>
@@ -20,11 +23,18 @@
     </header>
 
     <main>
-      <img src="harley-profile.jpg" alt="Harley McCulloch" class="profile" />
+      <img src="harley-profile.jpg" alt="Harley profil" class="profile-image" />
       <p class="intro-text">
         Velkommen til Harley McCulloch's univers — billedkunst, events og personlighed.
       </p>
     </main>
   </div>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.style.display = (menu.style.display === 'block') ? 'none' : 'block';
+    }
+  </script>
 </body>
 </html>
