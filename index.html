@@ -2,19 +2,20 @@
 <html lang="da">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Harley McCulloch</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="overlay">
     <header>
-      <img src="harley-logo.png" alt="Harley McCulloch logo" class="logo" />
-      <button class="menu-toggle" onclick="toggleMenu()">
-        <span class="menu-icon">&#9776;</span>
-        <span class="close-icon">&times;</span>
+      <img src="harley-logo.png" alt="Harley McCulloch Logo" class="logo" />
+      <button class="menu-btn" id="menuToggle">
+        <span class="bar" id="bar1"></span>
+        <span class="bar" id="bar2"></span>
+        <span class="bar" id="bar3"></span>
       </button>
-      <nav class="menu">
+      <nav id="menu" class="menu hidden">
         <ul>
           <li><a href="#">Forside</a></li>
           <li><a href="#">Galleri</a></li>
@@ -24,21 +25,19 @@
     </header>
 
     <main>
-      <img src="harley-profile.jpg" alt="Harley McCulloch" class="profile-pic" />
+      <img src="harley-profile.jpg" alt="Harley McCulloch" class="profile" />
       <p class="intro">Velkommen til Harley McCulloch's univers — billedkunst, events og personlighed.</p>
     </main>
   </div>
 
   <script>
-    function toggleMenu() {
-      const menu = document.querySelector('.menu');
-      const menuIcon = document.querySelector('.menu-icon');
-      const closeIcon = document.querySelector('.close-icon');
+    const menuBtn = document.getElementById("menuToggle");
+    const menu = document.getElementById("menu");
 
-      menu.classList.toggle('open');
-      menuIcon.classList.toggle('hidden');
-      closeIcon.classList.toggle('hidden');
-    }
+    menuBtn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+      menuBtn.classList.toggle("open");
+    });
   </script>
 </body>
 </html>
