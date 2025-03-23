@@ -9,9 +9,12 @@
 <body>
   <div class="overlay">
     <header>
-      <img src="harley-logo.png" alt="Harley McCulloch Logo" class="logo" />
-      <button class="menu-toggle" id="menu-toggle">&#9776; Menu</button>
-      <nav id="nav-menu" class="hidden">
+      <img src="harley-logo.png" alt="Harley McCulloch logo" class="logo" />
+      <button class="menu-toggle" onclick="toggleMenu()">
+        <span class="menu-icon">&#9776;</span>
+        <span class="close-icon">&times;</span>
+      </button>
+      <nav class="menu">
         <ul>
           <li><a href="#">Forside</a></li>
           <li><a href="#">Galleri</a></li>
@@ -21,21 +24,21 @@
     </header>
 
     <main>
-      <section class="profile">
-        <img src="harley-profile.jpg" alt="Harley McCulloch" />
-        <p>Velkommen til Harley McCulloch's univers — billedkunst, events og personlighed.</p>
-      </section>
+      <img src="harley-profile.jpg" alt="Harley McCulloch" class="profile-pic" />
+      <p class="intro">Velkommen til Harley McCulloch's univers — billedkunst, events og personlighed.</p>
     </main>
   </div>
 
   <script>
-    const menuToggle = document.getElementById("menu-toggle");
-    const navMenu = document.getElementById("nav-menu");
+    function toggleMenu() {
+      const menu = document.querySelector('.menu');
+      const menuIcon = document.querySelector('.menu-icon');
+      const closeIcon = document.querySelector('.close-icon');
 
-    menuToggle.addEventListener("click", () => {
-      navMenu.classList.toggle("hidden");
-      menuToggle.innerHTML = navMenu.classList.contains("hidden") ? "&#9776; Menu" : "&times; Luk";
-    });
+      menu.classList.toggle('open');
+      menuIcon.classList.toggle('hidden');
+      closeIcon.classList.toggle('hidden');
+    }
   </script>
 </body>
 </html>
