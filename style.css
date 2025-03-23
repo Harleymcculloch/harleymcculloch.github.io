@@ -26,7 +26,8 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-weight: 
+    font-weight: bold;
+}
 
 header {
   background-color: #333;
@@ -109,7 +110,7 @@ form button {
     color: white;
 }
 
-}.site-title {
+.site-title {
     background-color: #111;
     color: white;
     text-align: center;
