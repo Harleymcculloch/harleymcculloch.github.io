@@ -3,12 +3,20 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url('tattoo-background.png'); /* brug dit faktiske filnavn */
+  background-image: url('harley-bg.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   color: white;
+}
+
+main {
+  background: transparent;
+}
+
+header {
+  background: transparent;
 }
 
 nav {
@@ -125,8 +133,4 @@ form button {
     font-size: 20px;
     font-weight: bold;
     margin: 0;
-}
-
-main {
-  background: transparent;
 }
