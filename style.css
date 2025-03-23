@@ -135,3 +135,7 @@ form button {
   width: 80%;
   max-width: 400px;
 }
+
+main {
+  text-align: center;
+}
