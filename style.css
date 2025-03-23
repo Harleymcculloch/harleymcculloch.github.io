@@ -103,4 +103,17 @@ form button {
     font-weight: bold;
     color: white;
 }
+
+}.site-title {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    font-family: sans-serif;
+}
+
+.site-title h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
 }
