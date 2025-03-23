@@ -126,3 +126,7 @@ form button {
     font-weight: bold;
     margin: 0;
 }
+
+main {
+  background: transparent;
+}
