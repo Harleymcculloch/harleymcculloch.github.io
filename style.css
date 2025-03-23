@@ -16,30 +16,30 @@ body, html {
   padding-bottom: 50px;
 }
 
-/* Logo */
+/* Logo centreret og større */
 .logo {
   display: block;
-  margin: 30px auto 10px auto;
-  width: clamp(280px, 40vw, 500px); /* større */
+  margin: 40px auto 10px auto;
+  width: clamp(300px, 45vw, 520px);
 }
 
-/* Menu-knap */
+/* Menu-knap centreret */
 .menu-toggle {
   display: block;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   color: white;
   background: none;
   border: none;
   cursor: pointer;
-  margin: 10px auto;
+  margin: 10px auto 20px auto;
 }
 
-/* Menu */
+/* Menu-links */
 .menu ul {
   list-style: none;
   padding: 0;
-  margin: 10px 0;
+  margin: 0;
 }
 
 .menu ul li {
@@ -49,8 +49,8 @@ body, html {
 .menu ul li a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
   font-size: 18px;
+  font-weight: bold;
 }
 
 /* Skjult menu */
@@ -58,7 +58,7 @@ body, html {
   display: none;
 }
 
-/* Profilbillede */
+/* Profilbillede centreret */
 .profile-img {
   display: block;
   margin: 20px auto;
@@ -67,7 +67,7 @@ body, html {
   border-radius: 10px;
 }
 
-/* Introduktionstekst */
+/* Intro tekst */
 .intro-text {
   margin-top: 20px;
   font-size: 16px;
