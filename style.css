@@ -21,19 +21,21 @@ body {
 .logo {
   display: block;
   margin: 0 auto;
-  width: clamp(200px, 30vw, 400px); /* Gør logoet responsivt og større */
+  width: clamp(250px, 35vw, 500px); /* Øg bredden lidt */
   max-width: 100%;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-bottom: 10px;
 }
 
-/* MENU-KNAP */
+/* Menu-knap */
 .menu-toggle {
-  text-align: center;
-  font-size: 22px;
-  cursor: pointer;
-  margin-top: 10px;
+  font-size: 18px;      /* Lidt mindre skrift end før */
+  font-weight: bold;
   color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-top: 5px;
 }
 
 /* MOBILMENU */
