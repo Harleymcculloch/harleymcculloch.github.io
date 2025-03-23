@@ -3,7 +3,13 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f9f9f9;
+    background-color: #8B0000;
+    background-image: url('tattoo-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+}
 }
 
 nav {
