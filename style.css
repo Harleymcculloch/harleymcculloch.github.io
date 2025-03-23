@@ -1,61 +1,81 @@
-body, html {
+/* Reset */
+body, h1, p, ul {
   margin: 0;
   padding: 0;
+}
+
+body {
   font-family: Arial, sans-serif;
+  background-image: url('tattoo-background.png');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   color: white;
-  background-color: black;
-  height: 100%;
+  text-align: center;
   overflow-x: hidden;
 }
 
-.background {
-  background-image: url('tattoo-background.png');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+/* Baggrundsdæmper */
+.background-overlay {
   position: fixed;
   top: 0;
   left: 0;
-  height: 100%;
   width: 100%;
+  height: 100%;
+  background-color: rgba(10, 10, 10, 0.5);
   z-index: -1;
 }
 
-.logo-header {
-  text-align: center;
-  margin-top: 30px;
-}
-
+/* Logo */
 .logo {
-  width: 300px;
-  max-width: 80%;
+  display: block;
+  margin: 2em auto 1em;
+  width: 250px;
 }
 
-.menu-text {
-  margin-top: 10px;
-  font-size: 18px;
-  letter-spacing: 1px;
+/* Navigation */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 2em;
 }
 
-.profile-section {
-  text-align: center;
-  margin-top: 50px;
-  padding: 20px;
+nav ul li {
+  display: inline;
+  margin: 0 20px;
 }
 
-.profile-image {
-  width: 90%;
-  max-width: 400px;
-  border: 5px solid white;
-  border-radius: 5px;
-}
-
-.welcome-text {
-  margin-top: 20px;
-  font-size: 16px;
-  max-width: 600px;
-  margin-left: auto;
-  margin-right: auto;
+nav ul li a {
   color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Tekst */
+.intro-text {
+  font-size: 16px;
+  margin-bottom: 2em;
+  padding: 0 1em;
+}
+
+/* Profilbillede */
+.profile-image {
+  width: 80%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  transition: opacity 1.5s ease;
+  opacity: 0;
+}
+
+/* Fade-effekt */
+.fade-in {
+  animation: fadeIn ease 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
 }
