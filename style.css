@@ -89,3 +89,12 @@ form button {
     border-radius: 4px;
     cursor: pointer;
 }
+
+.above-image {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #333;
+    font-family: sans-serif;
+}
